@@ -11,6 +11,11 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
-    "pytest"
+    "pytest",
+    "pytest-asyncio",
 ]
 
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function" # Prevent deprecation warning
+log_cli = true
+log_cli_level = "INFO"
