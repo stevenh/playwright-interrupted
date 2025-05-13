@@ -1,0 +1,16 @@
+[project]
+name = "playwright-uv-example"
+version = "0.1.0"
+description = "A bare-bones Python project using uv and Playwright"
+requires-python = ">=3.8"
+dependencies = [
+    "playwright",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.24.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest"
+]
+
